@@ -8,3 +8,14 @@ Feature: Carrito de Compra Farmacia
     When presiono el botón Agregar al Carrito
     Then se debe agregar correctamente el producto al carrito
     And ver el carrito de compra en pantalla
+
+
+  Scenario: CA-01 - Límite de Stock de un producto
+    Given que el cliente está el en carrito de compras con al menos 1 producto
+    When el cliente aumenta la cantidad a pedir del producto a un número mayor de 10
+    And hace clic en "Actualizar la Compra"
+    Then se debe mostrar un popup que dice "Atención Has excedido el número máximo de unidades que puedes solicitar."
+
+  Scenario: CA-02 - Producto con Receta Médica
+    Given que el cliente está el en carrito de compras con al menos 1 producto
+    Then en cada artículo que esté asociado a un producto con receta médica debe aparecer un mensaje de alerta "Este medicamento requiere receta médica. Es necesario subirla en el paso siguiente"

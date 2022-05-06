@@ -25,9 +25,7 @@ public class CarritoDeComprasSteps {
     @Then("se debe agregar correctamente el producto al carrito")
     public void seDebeAgregarCorrectamenteElProductoAlCarrito() {
         Assert.assertTrue(carrito.validarMensajeImpresoProductoEnCarrito().contains("Se agreg"));
-
     }
-
     @Then("ver el carrito de compra en pantalla")
     public void verElCarritoDeCompraEnPantalla() {
         System.out.println("Validando Conexiones");

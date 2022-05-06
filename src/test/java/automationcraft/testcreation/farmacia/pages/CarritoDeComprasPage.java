@@ -1,6 +1,7 @@
 package automationcraft.testcreation.farmacia.pages;
 
 import automationcraft.engine.selenium.SeleniumBase;
+import io.cucumber.messages.internal.com.google.common.base.Predicates;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
