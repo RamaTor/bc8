@@ -20,7 +20,6 @@ public class ProductoConRecetaPage extends SeleniumBase {
 
             System.out.println("Cantidad de productos igual a 1");
         }
-
         /*public void solicitaRecetaMedica{
 
             if (pideRecetaMedica.equals("Este medicamento requiere receta médica. Es necesario subirla en el paso siguiente."))
